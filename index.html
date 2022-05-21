@@ -42,20 +42,30 @@
         <br>
 
         <!-- some text explaining basic web page function -->
-        <p>Look at the sum! There it is. One of the greatest quests of our lives are to go to the sum. It is what the man at the local Denny's told me, and we all know the Denny's people would never lie to me. Anyways enter two positive integers and then do the thing.</p>
+        <p>Look at the sum! There it is. One of the greatest quests of our lives is to go to the sum. It is what the man at the local Denny's told me, and we all know the Denny's people would never lie to me. Anyways enter two positive integers and then press calculate and you will go to the sum!</p>
         <!-- drop down form to collect your desired spaghetti size. -->
         <form action="javascript:sumClicked()">
           <label for="first-num">First positive integer:</label>
-          <input type="number" name="first-number" id="first-number">
+          <input type="number" name="first-number" id="first-number" min="0" step="1">
           <br>
           <br>
-          <input type="number" name="second-number" id="second-number">
+          <label for="second-num">Second positive integer:</label>
+          <input type="number" name="second-number" id="second-number" min="0" step="1">
           <br>
           <br>
+
+          <!-- button that starts the process, mdl style -->
+          <button onclick="sumClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Calculate
+          </button>
         </form>
+        <br>
+        <br>
         
         <!-- the div element that will display information back to the user -->
         <div id="calculated-sum"></div>
+        <br>
+        <br>
       </center>
     </main>
     </div>
