@@ -1,8 +1,8 @@
 // Created by: Katie
-// Created on: MONTH2022
+// Created on: May 2022
 // This file contains the JS functions for index.html
 
-//THISFUNCTIONDOESATHING
+//This function will produce the sum of two numbers through repeat addition using a FOR loop.
 function sumClicked() {
   //getting input from user.
   let firstNum = parseInt(document.getElementById('first-number').value);
